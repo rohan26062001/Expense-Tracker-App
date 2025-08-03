@@ -40,4 +40,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // ✅ Lombok
+    compileOnly(libs.lombok)
+    annotationProcessor(libs.lombok)
+    implementation(libs.slf4j.api)
+    runtimeOnly(libs.slf4j.simple)
 }
